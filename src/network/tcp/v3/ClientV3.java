@@ -37,7 +37,6 @@ public class ClientV3 {
             log("client <- server: " + received);
         }
 
-
         // 자원 정리
         log("연결 종료: " + socket);
         input.close();
