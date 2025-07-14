@@ -29,6 +29,7 @@ public class Client {
     public void start() throws IOException {
         log("클라이언트 시작");
         socket = new Socket(host, port);
+        input = new DataInputStream(socket.getInputStream());
         output = new DataOutputStream(socket.getOutputStream());
 
         readHandler = new ReadHandler(input, this);
