@@ -24,6 +24,4 @@ public class BasicData {
     void defaultMethod() {
         System.out.println("BasicData.defaultMethod");
     }
-
-
 }
